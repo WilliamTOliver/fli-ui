@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'cd-root',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cd';
+  sidenavOpened: boolean;
+  encapsulation: ViewEncapsulation.None;
+  toggleSideNav() {
+    this.sidenavOpened = !this.sidenavOpened;
+  }
 }
