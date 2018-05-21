@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'cd-root',
@@ -7,7 +7,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   sidenavOpened: boolean;
-  encapsulation: ViewEncapsulation.None;
   toggleSideNav() {
     this.sidenavOpened = !this.sidenavOpened;
   }
