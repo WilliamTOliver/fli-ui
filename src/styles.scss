@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 mat-sidenav-container {
     position: fixed;
@@ -6,20 +7,18 @@ mat-sidenav-container {
     min-height: 100%;
     width: 100%;
     min-width: 100%;
- }
+}
 
- agm-map {
-    height: 300px;
-  }
+agm-map {
+    height: 92%;
+}
 
 /* Theme */
 
 @import '~@angular/material/theming';
 @include mat-core();
 $cd-primary: mat-palette($mat-red, 600, 800, 900);
-$cd-accent:  mat-palette($mat-grey);
-$cd-warn:    mat-palette($mat-deep-orange);
-
+$cd-accent: mat-palette($mat-grey);
+$cd-warn: mat-palette($mat-deep-orange);
 $cd-theme: mat-light-theme($cd-primary, $cd-accent, $cd-warn);
-
 @include angular-material-theme($cd-theme);

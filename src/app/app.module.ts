@@ -58,6 +58,7 @@ import { FilterComponent } from './shared/filter/filter.component';
 import { MapComponent } from './shared/map/map.component';
 import { SearchComponent } from './shared/search/search.component';
 import { environment } from '../environments/environment';
+import { RoleComponent } from './shared/role/role.component';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { environment } from '../environments/environment';
     EventComponent,
     FilterComponent,
     MapComponent,
-    SearchComponent
+    SearchComponent,
+    RoleComponent
   ],
   imports: [
     MatAutocompleteModule,
@@ -119,6 +121,7 @@ import { environment } from '../environments/environment';
       apiKey: environment.googleMaps
     }),
   ],
+  entryComponents: [RoleComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
