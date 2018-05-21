@@ -40,6 +40,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AgmCoreModule } from '@agm/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -114,6 +115,9 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: environment.googleMaps
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
