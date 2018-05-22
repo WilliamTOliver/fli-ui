@@ -2,15 +2,31 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 mat-sidenav-container {
-    position: fixed;
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    min-width: 100%;
+  position: fixed;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
 }
 
 agm-map {
-    height: 92%;
+  height: 92%;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
 
 /* Theme */

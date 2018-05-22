@@ -1,5 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <mat-icon>add</mat-icon>
+    <mat-icon *ngIf="isOrganizer">add</mat-icon>
+    <p>Local Nomad</p>
   </mat-toolbar-row>
 </mat-toolbar>

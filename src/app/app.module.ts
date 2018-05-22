@@ -1,3 +1,5 @@
+import { EventService } from './shared/event/event.service';
+import { AuthService } from './shared/auth/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -122,7 +124,7 @@ import { RoleComponent } from './shared/role/role.component';
     }),
   ],
   entryComponents: [RoleComponent],
-  providers: [],
+  providers: [AuthService, EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

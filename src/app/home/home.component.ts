@@ -17,18 +17,18 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   }
   ngAfterViewInit() {
-    if (localStorage.getItem('hasSeen') !== 'true') {
+    // if (localStorage.getItem('hasSeen') !== 'true') {
       setTimeout(() => { // FIXME: This is due to a current problem with some material2 components
         // SEE https://github.com/angular/angular/issues/15634
         const dialogRef = this.dialog.open(RoleComponent, {
-          width: '100px'
+          width: '15rem'
         });
         dialogRef.afterClosed().subscribe(result => {
           console.log(result);
           localStorage.setItem('hasSeen', 'true');
         });
       }, 0);
-    }
+    // }
   }
 
 

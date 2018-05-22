@@ -1,3 +1,4 @@
+import { AuthService } from './../shared/auth/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  isOrganizer: boolean;
+  isDancer: boolean;
+  isPerformer: boolean;
+  constructor(private authService: AuthService) {
   }
 
+  ngOnInit() {
+    this.isOrganizer = this.authService.isOrganizer();
+    this.isDancer = this.authService.isDancer();
+    this.isPerformer = this.authService.isPerformer();
+  }
 }

@@ -3,4 +3,8 @@ mat-toolbar {
     width: 100%;
     bottom: 0;
     z-index: 1;
+    p {
+        display: inline;
+        font-size: 1rem;
+    }
 }
