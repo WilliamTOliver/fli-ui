@@ -2,19 +2,8 @@
   <p>
     <strong>Select a Role</strong>
   </p>
-  <div>
-    <button color="primary" mat-button>
-      Dancer
-    </button>
+  <div *ngFor="let role of roles">
+    <button color="primary" mat-raised-button>{{role.displayValue}}</button>
   </div>
-  <div>
-    <button color="primary" mat-button>
-      Performer
-    </button>
-  </div>
-  <div>
-    <button color="primary" mat-button>
-      Organizer
-    </button>
-  </div>
+
 </div>

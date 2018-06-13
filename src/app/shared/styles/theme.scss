@@ -1,0 +1,15 @@
+
+// Setup Angular Material Theme
+@import '~@angular/material/theming';
+@include mat-core();
+$cd-primary: mat-palette($mat-red, 600, 800, 900);
+$cd-accent: mat-palette($mat-grey);
+$cd-warn: mat-palette($mat-deep-orange);
+$cd-theme: mat-light-theme($cd-primary, $cd-accent, $cd-warn);
+@include angular-material-theme($cd-theme);
+
+// Define Custom Theme Variables
+
+$primary: #c62828;
+$secondary: #9e9e9e;
+$warn: #ff5722;
