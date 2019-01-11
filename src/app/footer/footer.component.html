@@ -1,8 +1,0 @@
-<mat-toolbar class="footer">
-  <mat-toolbar-row>
-    <mat-button-toggle-group #group="matButtonToggleGroup"></mat-button-toggle-group>
-    <mat-button-toggle *ngFor="let role of roles" [ngClass]="role.isActive ? 'role-button-active' : 'role-button-inactive'" (click)="toggleRole(role.id)">
-     {{role.displayValue}}
-    </mat-button-toggle>
-  </mat-toolbar-row>
-</mat-toolbar>
