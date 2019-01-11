@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 // MATERIAL
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+// LEAFLET
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LeafletModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
