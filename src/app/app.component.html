@@ -1,5 +1,7 @@
-<div style="height: 300px;"
-     leaflet 
-     [leafletOptions]="options">
+<div class="app-container">
+  <mat-toolbar>
+    <span>FirstRow</span>
+  </mat-toolbar>
+  <div class="leaflet-map" leaflet [leafletOptions]="options"></div>
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
